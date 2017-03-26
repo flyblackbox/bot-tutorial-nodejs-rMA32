@@ -12,7 +12,7 @@ function respond() {
       botRegexSlut = /^\/slut/; botRegexStop = /^\/stop/;
       botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/;
       botRegexGian = /^\/gian/; botRegexScrotes = /^\/scrotes/; botRegexShaki = /^\/shaki/;
-      botRegexDaf = /^\/dafuq/; botRegexMA32 = /^\/pending/; botRegexTrade = /^\/trade/; 
+      botRegexDaf = /^\/dafuq/; botRegexMA32 = /^\/pending/; botRegexTrade = /^\/trade/; botLouis = /^\/brett/; botLouis = /^\/louis/; botBiv = /^\/biv/; botSwan = /^\/swan/;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
@@ -23,6 +23,33 @@ function respond() {
     postMessage(cool());
     this.res.end();
   }
+  else if(request.text && botBrett.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("So negative, and NOT technically oriented!");
+    this.res.end();
+  }   
+  
+  else if(request.text && botLouis.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("He is the best and the most Technically Oriented");
+    this.res.end();
+  }   
+ 
+  else if(request.text && botTippy.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("Toucan Dan");
+    this.res.end();
+  } 
+  else if(request.text && botSean.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("Slippery Squirming Sean...");
+    this.res.end();
+  } 
+  else if(request.text && botBiv.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("She's one staunch bitch!");
+    this.res.end();
+  } 
   else if(request.text && botRegexSlut.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/640x364.jpeg.f8a0e216bf7e42ed9a86b3ae23cc2ff1.large");
